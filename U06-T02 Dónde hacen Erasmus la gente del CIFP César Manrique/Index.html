@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>U06-T02</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Busqueda de Erasmus</h1>
+      <form action="#">
+        <div class="form-group">
+            <label for="modalidad">Elige una modalidad:</label>
+            <select class="form-control" id="modalidad">
+              <option value="Todos" selected>Todos</option>
+              <option value="Profesorado">Profesorado</option>
+              <option value="Grado Superior">Grado Superior</option>
+              <option value="Grado Medio">Grado Medio</option>
+            </select>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="botonModalidad" class="btn btn-default">Enviar</button>
+        </div>
+      </form>
+    </div>
+    <div class="container" id="toggle"></div>
+    <div class="container">
+      <div class="col-sm-6" id="resultadosCiclos">
+        <ul id="listaPaises"></ul>
+        <div id="botones"></div>
+      </div>
+      <div class="col-sm-6" id="resultadosPais">
+        <div id="paises"></div>
+        <div id="filtros"></div>
+      </div>
+    </div>
+    <div class="container"><div id="mapa"></div></div>
+    <script src="script/script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDuCFER8OuYsSsdRIK-PxGhvnL5inKH60U"></script>
+  </body>
+</html>
